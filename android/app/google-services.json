@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "375955037284",
+    "firebase_url": "https://fir-27112001-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-27112001",
+    "storage_bucket": "fir-27112001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375955037284:android:9eec67dfc2d42d98171371",
+        "android_client_info": {
+          "package_name": "in.insideandroid.loginappfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375955037284-c298f4oopha5j6f3uaob8kq8bvn9dsc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhWWXX5PFPP0iZpHMf3_YPcC1HU8v4eO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375955037284-c298f4oopha5j6f3uaob8kq8bvn9dsc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
