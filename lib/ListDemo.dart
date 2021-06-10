@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginapp/payment/payment.dart';
 
-import 'QR/Qr_scan.dart';
 class ListDemo extends StatefulWidget {
   @override
   _ListDemoState createState() => _ListDemoState();
@@ -16,28 +15,28 @@ class _ListDemoState extends State<ListDemo> {
       appBar: AppBar(
         title: Text('Shopping List'),
       ),
-        floatingActionButton: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              FloatingActionButton(
-                child: Icon(Icons.qr_code),
-                backgroundColor: Colors.blue[700],
-                foregroundColor: Colors.white,
-                onPressed: () => {
-                },
+      floatingActionButton: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            FloatingActionButton(
+              child: Icon(Icons.qr_code),
+              backgroundColor: Colors.blue[700],
+              foregroundColor: Colors.white,
+              onPressed: () => {
+              },
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            FloatingActionButton(
+              child: Icon(
+                  Icons.payment
               ),
-              SizedBox(
-                height: 10,
-              ),
-              FloatingActionButton(
-                child: Icon(
-                    Icons.payment
-                ),
-                onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) =>  Payment()),);},
-                heroTag: null,
-              )
-            ]
-        ),
+              onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) =>  Payment()),);},
+              heroTag: null,
+            )
+          ]
+      ),
       body: ListView(
         children: [
           for (int count in List.generate(9, (index) => index + 1))

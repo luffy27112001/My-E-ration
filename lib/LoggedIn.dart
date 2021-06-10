@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:loginapp/LoggedIn/PersonalInfo.dart';
+import 'package:loginapp/main.dart';
+import 'package:loginapp/websites/register.dart';
+import 'package:loginapp/websites/status.dart';
+import 'QR/homePage.dart';
 import 'Registration.dart';
 import 'ListDemo.dart';
 import 'Image1.dart';
 import 'package:loginapp/authentication/authenticate.dart';
 import 'LoginPage.dart';
+
 class LoggedIn extends StatelessWidget{
   final AuthService _auth = AuthService();
   @override
   Widget build(BuildContext context) {
+    BuildContext rootContext = context;
     return Scaffold(
       appBar: new AppBar(
         title: new Text("Jan - Ration"),
@@ -28,29 +34,36 @@ class LoggedIn extends StatelessWidget{
               crossAxisAlignment :CrossAxisAlignment.center,
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.star),
+                  icon: Icon(Icons.login),
                   iconSize: 48,
                   tooltip: 'Registration',
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>  Registration()),
+                      MaterialPageRoute(builder: (context) =>  RegistrationSite()),
                     );
                   },
                 ),
 
                 IconButton(
-                  icon: Icon(Icons.star),
+                  icon: Icon(Icons.supervised_user_circle_rounded),
+                  iconSize: 48,
+                  tooltip: 'Status',
                   onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>  StatusSite()),
+                    );
                   },
                 ),
                 IconButton(
-                  icon: Icon(Icons.shopping_cart ),
+                  icon: Icon(Icons.location_pin),
+                  iconSize: 48,
                   tooltip: 'Cart',
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>  ListDemo()),);
+                      MaterialPageRoute(builder: (context) =>  HomePage()),);
                   },
                 ),
               ],
@@ -60,22 +73,28 @@ class LoggedIn extends StatelessWidget{
               crossAxisAlignment :CrossAxisAlignment.center,
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.star),
+                  icon: Icon(Icons.people_alt),
+                  iconSize: 48,
                   onPressed: () {         },
                 ),
 
                 IconButton(
                   icon: Icon(Icons.star),
+                  iconSize: 48,
                   onPressed: () {
 
                   },
                 ),
 
                 IconButton(
-                  icon: Icon(Icons.shopping_cart ),
+                  icon: Icon(Icons.location_searching ),
+                  iconSize: 48,
+                  tooltip: 'ONORC States',
                   onPressed: () {
-
-                  },
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>  Image1()),);
+                    },
                 ),
               ],
             ),
@@ -85,6 +104,7 @@ class LoggedIn extends StatelessWidget{
               children: <Widget>[
                 IconButton(
                   icon: Icon(Icons.star),
+                  iconSize: 48,
                   onPressed: () {
 
                   },
@@ -92,6 +112,7 @@ class LoggedIn extends StatelessWidget{
 
                 IconButton(
                   icon: Icon(Icons.star),
+                  iconSize: 48,
                   onPressed: () {
 
                   },
@@ -99,6 +120,7 @@ class LoggedIn extends StatelessWidget{
 
                 IconButton(
                   icon: Icon(Icons.shopping_cart ),
+                  iconSize: 48,
                   onPressed: () {
 
                   },
@@ -110,13 +132,15 @@ class LoggedIn extends StatelessWidget{
               crossAxisAlignment :CrossAxisAlignment.center,
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.star),
+                  icon: Icon(Icons.snippet_folder),
+                  iconSize: 48,
                   onPressed: () {
 
                   },
                 ),
                 IconButton(
-                  icon: Icon(Icons.shopping_cart ),
+                  icon: Icon(Icons.feedback ),
+                  iconSize: 48,
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -164,5 +188,3 @@ class LoggedIn extends StatelessWidget{
     );
   }
 }
-
-

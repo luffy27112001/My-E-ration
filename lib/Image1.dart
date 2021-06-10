@@ -9,15 +9,11 @@ class Image1 extends StatelessWidget {
 
         home: Scaffold(
           appBar: AppBar(
-            title: Text("Solid Shop"),
+            title: Text("ONORC States"),
             leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) =>  LoggedIn()),);}),
-            actions: <Widget>[
-              IconButton(icon: Icon(Icons.shopping_cart), onPressed: () {}),
-              IconButton(icon: Icon(Icons.message), onPressed: () {}),
-            ],
           ),
 
           body: Center(

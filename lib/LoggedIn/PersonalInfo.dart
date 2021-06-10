@@ -27,7 +27,7 @@ class PersonalInfo extends StatelessWidget {
           elevation: 0.0,
           actions: <Widget>[
             TextButton.icon(
-              icon: Icon(Icons.backspace),
+              icon: Icon(Icons.update),
               label: Text(''),
               style: TextButton.styleFrom(
                 primary: Colors.white,
