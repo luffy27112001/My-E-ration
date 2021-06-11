@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loginapp/LoggedIn.dart';
+import 'package:loginapp/LoggedIn/LoggedIn.dart';
 import 'package:loginapp/authentication/luffy_list.dart';
 import 'package:loginapp/authentication/database.dart';
 import 'package:loginapp/models/luffy.dart';

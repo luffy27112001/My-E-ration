@@ -3,10 +3,10 @@ import 'package:loginapp/LoggedIn/PersonalInfo.dart';
 import 'package:loginapp/main.dart';
 import 'package:loginapp/websites/register.dart';
 import 'package:loginapp/websites/status.dart';
-import 'QR/homePage.dart';
+import 'package:loginapp/QR/homePage.dart';
 import 'Registration.dart';
 import 'ListDemo.dart';
-import 'Image1.dart';
+import 'package:loginapp/Image1.dart';
 import 'package:loginapp/authentication/authenticate.dart';
 import 'LoginPage.dart';
 

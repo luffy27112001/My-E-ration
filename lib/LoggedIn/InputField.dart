@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loginapp/Forgot.dart';
+import 'package:loginapp/LoggedIn/Forgot.dart';
 import 'LoggedIn.dart';
 import 'Registration.dart';
 import 'package:loginapp/authentication/authenticate.dart';

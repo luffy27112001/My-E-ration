@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'LoggedIn.dart';
+import 'package:loginapp/LoggedIn/LoggedIn.dart';
 class Image1 extends StatelessWidget {
 
   @override
