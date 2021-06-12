@@ -5,7 +5,6 @@ import 'package:loginapp/payment/existing-cards.dart';
 import 'package:provider/provider.dart';
 import 'package:loginapp/authentication/authenticate.dart';
 import 'package:loginapp/models/user.dart';
-
 import 'LoggedIn/Registration.dart';
 void main(){
   WidgetsFlutterBinding.ensureInitialized();

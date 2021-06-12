@@ -11,7 +11,6 @@ class CartCard extends StatelessWidget {
   }) : super(key: key);
 
   final Cart cart;
-
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -40,15 +39,16 @@ class CartCard extends StatelessWidget {
               style: TextStyle(color: Colors.black, fontSize: 16),
               maxLines: 2,
             ),
+
             SizedBox(height: 10),
             Text.rich(
               TextSpan(
-                text: "\$${cart.product.price}",
+                text: " ${cart.product.price} Rs.",
                 style: TextStyle(
                     fontWeight: FontWeight.w600, color: kPrimaryColor),
                 children: [
                   TextSpan(
-                      text: " x${cart.numOfItem}",
+                      text: " x ${ cart.numOfItem }",
                       style: Theme.of(context).textTheme.bodyText1),
                 ],
               ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:loginapp/cart/components/default_button.dart';
-
+import 'package:loginapp/payment/payment.dart';
+import 'package:pay/pay.dart';
 import 'package:loginapp/shared/constants.dart';
 import '../size_config.dart';
 
@@ -50,14 +51,6 @@ class CheckoutCard extends StatelessWidget {
                   ),
                   child: SvgPicture.asset("assets/icons/receipt.svg"),
                 ),
-                Spacer(),
-                Text("Add voucher code"),
-                const SizedBox(width: 10),
-                Icon(
-                  Icons.arrow_forward_ios,
-                  size: 12,
-                  color: kTextColor,
-                )
               ],
             ),
             SizedBox(height: getProportionateScreenHeight(20)),
@@ -79,7 +72,8 @@ class CheckoutCard extends StatelessWidget {
                   width: getProportionateScreenWidth(190),
                   child: DefaultButton(
                     text: "Check Out",
-                    press: () {},
+                    press: () {
+                      Navigator.push(context,MaterialPageRoute(builder: (context) =>  Payment()),);},
                   ),
                 ),
               ],

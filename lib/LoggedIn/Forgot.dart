@@ -14,9 +14,9 @@ class _ForgotState extends State<Forgot> {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   final _formKey = GlobalKey<FormState>();
   // text field state
-  String email = '';
-  String password = '';
-  String error = '';
+  String email = '' ;
+  String password = '' ;
+  String error = '' ;
   bool loading = false;
   @override
   Widget build(BuildContext context) {

@@ -38,7 +38,6 @@ dependencies:
   dio: ^3.0.10
   webview_flutter: ^1.0.0
   js: ^0.6.2
-  flutter_svg: ^0.19.1
   stripe_payment:
   http:
   flutter_credit_card: ^0.1.3
@@ -46,6 +45,8 @@ dependencies:
   barcode_scan: ^2.0.1
   qr_flutter: ^3.2.0
   path_provider: ^1.6.5
+  pay: ^1.0.1
+  velocity_x: ^3.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -61,7 +62,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-      - assets/images/lake.jpg
+      - assets/images/
+      - assets/icons/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
