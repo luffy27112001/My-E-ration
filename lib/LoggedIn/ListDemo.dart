@@ -18,13 +18,6 @@ class _ListDemoState extends State<ListDemo> {
       floatingActionButton: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            FloatingActionButton(
-              child: Icon(Icons.qr_code),
-              backgroundColor: Colors.blue[700],
-              foregroundColor: Colors.white,
-              onPressed: () => {
-              },
-            ),
             SizedBox(
               height: 10,
             ),

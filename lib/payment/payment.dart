@@ -52,7 +52,7 @@ class PaymentState extends State<Payment> {
     ThemeData theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: Text('Payment'),
       ),
       body: Container(
         padding: EdgeInsets.all(20),

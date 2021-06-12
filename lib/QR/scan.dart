@@ -1,6 +1,7 @@
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:loginapp/LoggedIn/ListDemo.dart';
+import 'package:loginapp/cart/cart_screen.dart';
 
 class ScanPage extends StatefulWidget {
   @override
@@ -34,12 +35,27 @@ class _ScanPageState extends State<ScanPage> {
               ),
               textAlign: TextAlign.center,
             ),
-                // try{
-                //   BarcodeScanner.scan()    this method is used to scan the QR code
-                // }catch (e){
-                //   BarcodeScanner.CameraAccessDenied;   we can print that user has denied for the permisions
-                //   BarcodeScanner.UserCanceled;   we can print on the page that user has cancelled
-                //
+            SizedBox(
+              height: 20.0,
+            ),
+            FlatButton(
+              padding: EdgeInsets.all(15.0),
+              onPressed: () async {
+                String codeSanner = await BarcodeScanner.scan();    //barcode scnner
+                setState(() {
+                  qrCodeResult = codeSanner;
+                });
+              },
+              child: Text(
+                "Scan  Again",
+                style:
+                TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+              ),
+              shape: RoundedRectangleBorder(
+                  side: BorderSide(color: Colors.blue, width: 3.0),
+                  borderRadius: BorderRadius.circular(20.0)),
+            ),
+            
             SizedBox(
               height: 20.0,
             ),
@@ -48,9 +64,16 @@ class _ScanPageState extends State<ScanPage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) =>  ListDemo()),
+                  MaterialPageRoute(builder: (context) =>  CartScreen()),
                 );
-              }
+              },
+              child: Text(
+                'Go to Cart',
+                style: TextStyle(color: Colors.blue,fontWeight: FontWeight.bold),
+            ),
+              shape: RoundedRectangleBorder(
+              side: BorderSide(color: Colors.blue,width: 3.0),
+              borderRadius: BorderRadius.circular(20.0)),
             ),
           ],
         ),

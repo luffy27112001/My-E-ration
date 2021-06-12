@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:loginapp/LoggedIn/PersonalInfo.dart';
-import 'package:loginapp/main.dart';
 import 'package:loginapp/websites/register.dart';
 import 'package:loginapp/websites/status.dart';
 import 'package:loginapp/QR/homePage.dart';
