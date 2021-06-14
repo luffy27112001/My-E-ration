@@ -49,7 +49,7 @@ class _FoodscreenState extends State<Foodscreen> {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),
-                color: Colors.white,
+                color: Colors.blue[100],
               ),
               height: size.height / 1.8,
               width: size.width,
@@ -79,10 +79,9 @@ class _FoodscreenState extends State<Foodscreen> {
                           Padding(
                             padding: const EdgeInsets.only(top: 20),
                             child: Text(
-                              'Rs. ${widget.county.price}',
+                              'Rs. ${widget.county.price}/kg.',
                               style: TextStyle(
-                                  color: Theme.of(context).secondaryHeaderColor,
-                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black,
                                   fontSize: 30,
                                   letterSpacing: 1.2),
                             ),
@@ -99,7 +98,7 @@ class _FoodscreenState extends State<Foodscreen> {
                                       borderRadius: BorderRadius.circular(50),
                                       border: Border.all(
                                         width: 2,
-                                        color: Colors.grey
+                                        color: Colors.black
                                             .withOpacity(0.5), // change color
                                       ),
                                     ),
@@ -126,7 +125,7 @@ class _FoodscreenState extends State<Foodscreen> {
                                       borderRadius: BorderRadius.circular(50),
                                       border: Border.all(
                                         width: 2,
-                                        color: Colors.grey
+                                        color: Colors.black
                                             .withOpacity(0.5), // change color
                                       ),
                                     ),
@@ -153,7 +152,6 @@ class _FoodscreenState extends State<Foodscreen> {
                                 Icon(
                                   Icons.star_rounded,
                                   size: 15,
-                                  color: Theme.of(context).secondaryHeaderColor,
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 5.0),
@@ -168,54 +166,12 @@ class _FoodscreenState extends State<Foodscreen> {
                               ],
                             ),
                           ),
-                          Container(
-                            child: Row(
-                              children: [
-                                Icon(
-                                  Icons.timer,
-                                  size: 15,
-                                  color: Theme.of(context).secondaryHeaderColor,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 5.0),
-                                  child: Text(
-                                    '10 min',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 15,
-                                        letterSpacing: 1.2),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: Row(
-                              children: [
-                                Icon(
-                                  Icons.local_fire_department_outlined,
-                                  size: 15,
-                                  color: Theme.of(context).secondaryHeaderColor,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 5.0),
-                                  child: Text(
-                                    '${widget.county.cal}',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 15,
-                                        letterSpacing: 1.2),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
                         ],
                       ),
                     ),
                     Text(
-                      "-----",
-                      style: TextStyle(color: Colors.grey),
+                      "Desciption",
+                      style: TextStyle(color: Colors.black),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 30.0),
@@ -227,7 +183,7 @@ class _FoodscreenState extends State<Foodscreen> {
                                 style: ButtonStyle(
                                   backgroundColor:
                                       MaterialStateProperty.all<Color>(
-                                          Colors.orange.withOpacity(1)),
+                                          Colors.blue.withOpacity(1)),
                                 ),
                                 onPressed: () {
                                   cart.add(widget.county);
@@ -258,7 +214,7 @@ class _FoodscreenState extends State<Foodscreen> {
               height: 40,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                color: Colors.white.withOpacity(0.9),
+                color: Colors.blue[100].withOpacity(0.9),
               ),
               child: Expanded(
                 child: IconButton(
@@ -281,7 +237,7 @@ class _FoodscreenState extends State<Foodscreen> {
                 height: 50,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.white.withOpacity(0.9),
+                  color: Colors.blue[100].withOpacity(0.9),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

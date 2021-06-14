@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:loginapp/LoggedIn/Contact.dart';
 import 'package:loginapp/LoggedIn/PersonalInfo.dart';
+import 'package:loginapp/websites/e-aadhar.dart';
 import 'package:loginapp/websites/register.dart';
+import 'package:loginapp/websites/seeding.dart';
 import 'package:loginapp/websites/status.dart';
 import 'package:loginapp/QR/homePage.dart';
-import 'Registration.dart';
-import 'ListDemo.dart';
 import 'package:loginapp/Image1.dart';
 import 'package:loginapp/authentication/authenticate.dart';
 import 'LoginPage.dart';
@@ -16,14 +17,14 @@ class LoggedIn extends StatelessWidget{
     BuildContext rootContext = context;
     return Scaffold(
       appBar: new AppBar(
-        title: new Text("Jan - Ration"),
+        title: new Text("Jan - Ration App"),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.account_circle), onPressed: () => {
             Navigator.push(context,MaterialPageRoute(builder: (context) =>  PersonalInfo()),)}),
           IconButton(icon: Icon(Icons.more_vert), onPressed: () => {})
         ],
       ),
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.blue[200],
       body:  Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -56,13 +57,16 @@ class LoggedIn extends StatelessWidget{
                   },
                 ),
                 IconButton(
-                  icon: Icon(Icons.location_pin),
+                  icon: Icon(Icons.shopping_cart),
                   iconSize: 48,
                   tooltip: 'Cart',
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>  HomePage()),);
+                      MaterialPageRoute (
+                          builder: (context) =>  HomePage()
+                      ),
+                    );
                   },
                 ),
               ],
@@ -74,14 +78,25 @@ class LoggedIn extends StatelessWidget{
                 IconButton(
                   icon: Icon(Icons.people_alt),
                   iconSize: 48,
-                  onPressed: () {         },
+                  tooltip: 'E-Aadhaar Download',
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  EAdhaarSite()),
+                    );
+                  },
                 ),
 
                 IconButton(
-                  icon: Icon(Icons.star),
+                  icon: Icon(Icons.snippet_folder),
                   iconSize: 48,
                   onPressed: () {
-
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  SeedingSite()),
+                    );
                   },
                 ),
 
@@ -92,7 +107,9 @@ class LoggedIn extends StatelessWidget{
                   onPressed: () {
                     Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) =>  Image1()),);
+                    MaterialPageRoute(
+                        builder: (context) =>  Image1()),
+                    );
                     },
                 ),
               ],
@@ -104,6 +121,7 @@ class LoggedIn extends StatelessWidget{
                 IconButton(
                   icon: Icon(Icons.star),
                   iconSize: 48,
+                  tooltip: 'Registration',
                   onPressed: () {
 
                   },
@@ -112,14 +130,16 @@ class LoggedIn extends StatelessWidget{
                 IconButton(
                   icon: Icon(Icons.star),
                   iconSize: 48,
+                  tooltip: 'Empty',
                   onPressed: () {
 
                   },
                 ),
 
                 IconButton(
-                  icon: Icon(Icons.shopping_cart ),
+                  icon: Icon(Icons.star ),
                   iconSize: 48,
+                  tooltip: 'Empty',
                   onPressed: () {
 
                   },
@@ -131,21 +151,25 @@ class LoggedIn extends StatelessWidget{
               crossAxisAlignment :CrossAxisAlignment.center,
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.snippet_folder),
+                  icon: Icon(Icons.star),
                   iconSize: 48,
+                  tooltip: 'Empty',
                   onPressed: () {
 
                   },
                 ),
                 IconButton(
-                  icon: Icon(Icons.feedback ),
+                  icon: Icon(Icons.call ),
                   iconSize: 48,
+                  tooltip: 'Contact Us',
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>  Image1()),);
-                  },
-                ),
+                      MaterialPageRoute(
+                          builder: (context) =>  Contact()),
+                    );
+                  }
+                  ),
               ],
             ),
           ],
@@ -160,7 +184,11 @@ class LoggedIn extends StatelessWidget{
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              child: Text('Drawer Header'),
+              child: Text(
+                  'Dash-Board',
+                style: TextStyle(fontSize: 25.0),
+                textAlign: TextAlign.start,
+              ),
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
@@ -168,9 +196,6 @@ class LoggedIn extends StatelessWidget{
             ListTile(
               title: Text('Item 1'),
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
                 Navigator.pop(context);
               },
             ),

@@ -285,7 +285,7 @@ class _CartScreenState extends State<CartScreen> {
                           child: ElevatedButton(
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.orange.withOpacity(1)),
+                                  Colors.blue[100].withOpacity(1)),
                             ),
                             onPressed: () {
                               Navigator.push(

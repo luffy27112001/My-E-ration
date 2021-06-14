@@ -43,12 +43,12 @@ class _LandingPageState extends State<LandingPage> {
                     ),
                   ),
                   Text(
-                    'Jan-Ration',
+                    'Jan-Ration Cart',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w800,
-                        fontSize: 40,
-                        letterSpacing: 3),
+                        fontSize: 20,
+                        letterSpacing: 2),
                   ),
                   GestureDetector(
                     onTap: () => Navigator.push(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class StatusSite extends StatelessWidget {
+class SeedingSite extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,7 +9,7 @@ class StatusSite extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.blue,
         title: Text(
-          "State-wise Links For Status",
+          "Aadhaar Card Seeding",
           style: TextStyle(color: Colors.black),
         ),
       ),

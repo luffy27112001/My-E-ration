@@ -181,7 +181,7 @@ class _CategoriesState extends State<Categories> {
                             child: Padding(
                               padding: const EdgeInsets.all(30),
                               child: Text(
-                                'Rs. ${count.price}',
+                                'Rs. ${count.price}/kg',
                                 style: TextStyle(
                                     color: Colors.black87,
                                     fontWeight: FontWeight.w500,

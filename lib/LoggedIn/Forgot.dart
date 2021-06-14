@@ -56,6 +56,9 @@ class _ForgotState extends State<Forgot> {
                           context,
                           MaterialPageRoute(builder: (context) =>  LoginPage()),);
                     }
+                    else{
+                      error = 'Please supply a valid email';
+                    }
                   }
               ),
               SizedBox(height: 12.0),

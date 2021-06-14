@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class StatusSite extends StatelessWidget {
+class EAdhaarSite extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,13 +9,13 @@ class StatusSite extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.blue,
         title: Text(
-          "State-wise Links For Status",
+          "Download E-Adhaar",
           style: TextStyle(color: Colors.black),
         ),
       ),
       body: SafeArea(
         child: WebView(
-          initialUrl: "https://www.bankbazaar.com/ration-card.html",
+          initialUrl: "https://eaadhaar.uidai.gov.in/#/",
           javascriptMode: JavascriptMode.unrestricted,
         ),
       ),

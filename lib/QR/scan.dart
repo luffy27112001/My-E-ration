@@ -1,6 +1,5 @@
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
-import 'package:loginapp/LoggedIn/ListDemo.dart';
 import 'package:loginapp/cart2/Foodscreen.dart';
 import 'package:loginapp/cart2/cartScreen.dart';
 import 'package:loginapp/cart2/landingPage.dart';
@@ -48,7 +47,6 @@ class _ScanPageState extends State<ScanPage> {
                 setState(() {
                   qrCodeResult = codeSanner;
                   if(qrCodeResult == 'Rice'){
-
                   }
                 });
               },

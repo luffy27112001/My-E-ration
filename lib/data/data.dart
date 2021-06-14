@@ -12,7 +12,7 @@ final cereals =
 final essentials =
     Food(food: 'Essentials', imageurl: 'assets/images/sugar.jpg', menu: _essentialsMenu);
 final pulses =
-    Food(food: 'EmptyMenu', imageurl: 'assets/images/empty.jpg', menu: _pulses);
+    Food(food: 'Pulses', imageurl: 'assets/images/urad.jpeg', menu: _pulses);
 final other =
 Food(food: 'Kerosene', imageurl: 'assets/images/kerosene.jpg', menu: _otherMenu);
 
@@ -21,7 +21,7 @@ final _cerealsMenu = [
     name: 'Rice',
     image: 'assets/images/ricebl1.jpg',
     star: "4.2",
-    price: 60,
+    price: 2,
     cal: "328 Kcal",
     number: 1,
   ),
@@ -29,7 +29,7 @@ final _cerealsMenu = [
     name: 'Wheat',
     image: 'assets/images/wheat.jpg',
     star: "4.6",
-    price: 60,
+    price: 5,
     cal: "452 Kcal",
     number: 1,
   ),
@@ -39,7 +39,7 @@ final _essentialsMenu = [
     name: 'Sugar',
     image: 'assets/images/sugar.jpg',
     star: "4.2",
-    price: 65,
+    price: 12,
     cal: "234 Kcal",
     number: 1,
   ),
@@ -47,7 +47,7 @@ final _essentialsMenu = [
     name: 'Salt',
     image: 'assets/images/salt.jpg',
     star: "4.1",
-    price: 45,
+    price: 10,
     cal: "124 Kcal",
     number: 1,
   ),
@@ -55,10 +55,10 @@ final _essentialsMenu = [
 
 final _pulses = [
   Types(
-    name: 'Sample',
-    image: 'assets/images/empty.jpg',
+    name: 'Urad',
+    image: 'assets/images/urad.jpeg',
     star: "4.0",
-    price: 80,
+    price: 13,
     cal: "789 Kcal",
     number: 1,
   ),
@@ -66,7 +66,7 @@ final _pulses = [
     name: 'Sample2',
     image: 'assets/images/empty.jpg',
     star: "4.2",
-    price: 60,
+    price: 14,
     cal: "679 Kcal",
     number: 1,
   ),
@@ -77,9 +77,8 @@ final _otherMenu = [
     name: 'Kerosene',
     image: 'assets/images/kerosene.jpg',
     star: "3.9",
-    price: 30,
+    price: 20,
     cal: "197 Kcal",
     number: 1,
   ),
-
 ];
