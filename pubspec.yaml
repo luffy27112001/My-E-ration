@@ -45,7 +45,6 @@ dependencies:
   barcode_scan: ^2.0.1
   qr_flutter: ^3.2.0
   path_provider: ^1.6.5
-  pay: ^1.0.1
   velocity_x: ^3.0.0
 dev_dependencies:
   flutter_test:

@@ -1,7 +1,10 @@
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:loginapp/LoggedIn/ListDemo.dart';
-import 'package:loginapp/cart/cart_screen.dart';
+import 'package:loginapp/cart2/Foodscreen.dart';
+import 'package:loginapp/cart2/cartScreen.dart';
+import 'package:loginapp/cart2/landingPage.dart';
+import 'package:loginapp/data/data.dart';
 
 class ScanPage extends StatefulWidget {
   @override
@@ -44,6 +47,9 @@ class _ScanPageState extends State<ScanPage> {
                 String codeSanner = await BarcodeScanner.scan();    //barcode scnner
                 setState(() {
                   qrCodeResult = codeSanner;
+                  if(qrCodeResult == 'Rice'){
+
+                  }
                 });
               },
               child: Text(
@@ -64,7 +70,7 @@ class _ScanPageState extends State<ScanPage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) =>  CartScreen()),
+                  MaterialPageRoute(builder: (context) =>  LandingPage()),
                 );
               },
               child: Text(
