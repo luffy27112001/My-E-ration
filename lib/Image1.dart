@@ -23,18 +23,7 @@ class Image1 extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       crossAxisAlignment :CrossAxisAlignment.center,
-                      children: <Widget>[
-                        IconButton(
-                          icon: Icon(Icons.star),
-                          onPressed: () {
 
-                          },
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.shopping_cart ),
-                          onPressed: () {},
-                        ),
-                      ],
                     ),
                   ]
               )

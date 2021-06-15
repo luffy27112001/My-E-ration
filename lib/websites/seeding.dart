@@ -15,7 +15,7 @@ class SeedingSite extends StatelessWidget {
       ),
       body: SafeArea(
         child: WebView(
-          initialUrl: "https://www.bankbazaar.com/ration-card.html",
+          initialUrl: "https://gateway.netpnb.com/Aadhaar/",
           javascriptMode: JavascriptMode.unrestricted,
         ),
       ),

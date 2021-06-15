@@ -47,11 +47,12 @@ class _ScanPageState extends State<ScanPage> {
                 setState(() {
                   qrCodeResult = codeSanner;
                   if(qrCodeResult == 'Rice'){
+
                   }
                 });
               },
               child: Text(
-                "Scan  Again",
+                "Scan Again",
                 style:
                 TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
               ),
